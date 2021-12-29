@@ -1,5 +1,5 @@
 # CountNumberEvent
-![Jit](https://img.shields.io/jitpack/v/github/ParkSangSun1/CountNumberEvent?style=for-the-badge&color=2F9319) 
+[![](https://jitpack.io/v/ParkSangSun1/countnumberevent.svg)](https://jitpack.io/#ParkSangSun1/countnumberevent)
 
 🪄 This is an animation library with an increasing number of TextViews
 
