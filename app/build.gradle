@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.pss.countnumberevent"
-        minSdk 21
+        minSdk 17
         targetSdk 31
         versionCode 1
         versionName "1.0"
