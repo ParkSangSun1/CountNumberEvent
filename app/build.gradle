@@ -42,4 +42,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(":Library")
+    implementation 'com.github.ParkSangSun1:CountNumberEvent:1.0.1'
+
 }
