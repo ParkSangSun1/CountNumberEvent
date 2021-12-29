@@ -36,10 +36,10 @@ dependencies {
 ```
 countNumber(startCount, endCount, txtView, duration)
 ```
-startCount : The first number - 처음 시작할 숫자<br>
-endCount : The last number - 끝날 숫자<br>
-txtView : TextView to be displayed - 표시할 TextView<br>
-duration : It's time to increase the number (1000 = 1 second) - 숫자가 증가하는 시간입니다 (1000 = 1초)<br>
+startCount : The first number<br>
+endCount : The last number<br>
+txtView : TextView to be displayed<br>
+duration : It's time to increase the number (1000 = 1 second)<br>
 
 #### Example
 ```
