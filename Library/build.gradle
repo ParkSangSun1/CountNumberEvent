@@ -4,6 +4,27 @@ plugins {
     id 'maven-publish'
 }
 
+afterEvaluate {
+    publishing{
+        publications{
+            release(MavenPublication){
+                from components.release
+                groupId = 'com.pss'
+                artifactId = 'library'
+                version = '1.0'
+            }
+
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
+                groupId = 'com.pss'
+                artifactId = 'library'
+                version = '1.0'
+            }
+        }
+    }
+}
+
 android {
     compileSdk 31
 
@@ -37,17 +58,4 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
-
-afterEvaluate {
-    publishing{
-        publications{
-            release(MavenPublication){
-                from components.release
-                groupId = 'com.pss'
-                artifactId = 'library'
-                version = '1.0.2'
-            }
-        }
-    }
 }
